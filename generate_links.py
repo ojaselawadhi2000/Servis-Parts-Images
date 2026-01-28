@@ -32,7 +32,7 @@ import os
 # ==== CHANGE THESE ====
 USERNAME = "ojaselawadhi2000"               # your GitHub username
 REPO = "Servis-Parts-Images"             # your repo name
-ASSETS_FOLDER = "./Assets/PIC_pages_named"        # folder containing your images
+ASSETS_FOLDER = "./Assets/PTO"        # folder containing your images
 # =====================
 
 base_url = f"https://cdn.jsdelivr.net/gh/{USERNAME}/{REPO}@main/"
@@ -48,7 +48,7 @@ for root, dirs, files in os.walk(ASSETS_FOLDER):
             cdn_links.append(cdn_link)
 
 # Save all links to a file
-with open("PIC_pages_named.txt", "w") as f:
+with open("PTO.txt", "w") as f:
     f.write("\n".join(cdn_links))
 
 print("✅ All CDN links saved to cdn_links.txt")
